@@ -1,5 +1,3 @@
-# Bruno Morais
-
 Hi, Welcome to my GitHub Profile. If you don't know me yet, i'm an economist by education and data guy by trade. I've got adjacent depth in data analytics, data engineering and data science — not “jack of all trades”, but someone who can bridge disciplines. Right now I’m working at **@Hotmart-org**.
 
 I value data quality, strong analytical foundations, and pragmatic solutions that scale.
