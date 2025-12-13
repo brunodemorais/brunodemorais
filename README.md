@@ -1,4 +1,4 @@
-Hi, Welcome to my GitHub Profile. If you don't know me yet, i'm an economist by education and data guy by trade. I've got adjacent depth in data analytics, data engineering and data science — not “jack of all trades”, but someone who can bridge disciplines. Right now I’m working at **@Hotmart-org**.
+Hi, welcome to my GitHub Profile. If you don't know me yet, i'm an applied economist by education and data guy by trade. I've got adjacent depth in data analytics, data engineering and data science — not “jack of all trades”, but someone who can bridge disciplines. Right now I’m working at **@Hotmart-org**.
 
 I value data quality, strong analytical foundations, and pragmatic solutions that scale.
 
@@ -22,8 +22,8 @@ I value data quality, strong analytical foundations, and pragmatic solutions tha
 - BigQuery, PostgreSQL
 
 **Data Science**
-- Python (LangChain, scikit-learn)
-- Statistical modeling
+- LangChain, scikit-learn
+- Advanced Statistical modeling
 
 **Visualization & BI**
 - Looker
