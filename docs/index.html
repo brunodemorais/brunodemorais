@@ -15,7 +15,7 @@
             font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
             line-height: 1.6;
             color: #333333;
-            background: #ffffff;
+            background: #255A5E;
         }
 
         .data-grid {
@@ -38,47 +38,31 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #ff6b35 0%, #ff8c5a 50%, #ff6b35 100%);
-            color: white;
-            padding: 4rem 2rem;
+            background: #ffffff;
+            color: #333333;
+            padding: 3rem 2rem 2rem 2rem;
             text-align: center;
-            position: relative;
-            overflow: hidden;
             border-bottom: 3px solid #ff6b35;
         }
 
-        .header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 2px,
-                rgba(255, 255, 255, 0.05) 2px,
-                rgba(255, 255, 255, 0.05) 4px
-            );
-            animation: scan 8s linear infinite;
-        }
-
-        @keyframes scan {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(50px); }
-        }
-
         .header-content {
-            position: relative;
-            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-logo {
+            width: 350px;
+            height: auto;
+            margin-bottom: 1rem;
         }
 
         .header h1 {
             font-size: 2.8rem;
             margin-bottom: 0.5rem;
             font-weight: 700;
-            text-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+            color: #333333;
             font-family: 'Courier New', monospace;
             letter-spacing: 2px;
         }
@@ -89,25 +73,6 @@
             color: #ff6b35;
             font-weight: 600;
             margin-bottom: 0.5rem;
-        }
-
-        .header .tagline {
-            font-size: 1rem;
-            opacity: 0.8;
-            font-style: italic;
-            color: #ffffff;
-        }
-
-        .data-badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            border: 2px solid #ffffff;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            margin-top: 1rem;
-            font-family: 'Courier New', monospace;
-            color: #ffffff;
-            font-weight: bold;
         }
 
         .container {
@@ -345,6 +310,14 @@
                 font-size: 1.1rem;
             }
 
+            .header-logo {
+                width: 180px;
+            }
+
+            .header {
+                padding: 2rem 1rem 1.5rem 1rem;
+            }
+
             .section {
                 padding: 1.5rem;
             }
@@ -395,19 +368,15 @@
     <div class="content-wrapper">
         <header class="header">
             <div class="header-content">
-                <h1>Your Name</h1>
-                <p class="title">Senior Data Analyst @ Hotmart</p>
-                <p class="tagline">"Transforming Data into Strategic Insights"</p>
-                <div class="data-badge">DATA_DRIVEN | INSIGHTS_FOCUSED</div>
+                <img src="images/hotmart_banner.png" alt="Hotmart" class="header-logo">
             </div>
         </header>
-
         <div class="container">
             <section class="section about">
                 <h2>About Me</h2>
                 <div class="about-content">
                     <div class="about-photo">
-                        <img src="your-photo.jpg" alt="Your Name - Senior Data Analyst">
+                        <img src="images/me.png" alt="Bruno de Morais - Senior Data Analyst">
                     </div>
                     <div class="about-text">
                         <p>
@@ -488,11 +457,11 @@
                 <h2>Experience</h2>
                 <div class="experience-item">
                     <div class="experience-logo">
-                        <img src="hotmart-logo.png" alt="Hotmart logo">
+                        <img src="images/hotmart.png" alt="Hotmart logo">
                     </div>
                     <div class="experience-content">
                         <h3>Senior Data Analyst</h3>
-                        <div class="experience-meta">Hotmart | [Start Date] - Present | São Paulo, BR</div>
+                        <div class="experience-meta">Hotmart | Jul/25 - Present | São Paulo, BR</div>
                         <ul>
                             <li>Lead end-to-end analytics projects, from data extraction to executive presentation</li>
                             <li>Design and maintain automated dashboards tracking key business metrics and KPIs</li>
@@ -505,11 +474,26 @@
                 </div>
                 <div class="experience-item">
                     <div class="experience-logo">
-                        <img src="company-logo.png" alt="Company logo">
+                        <img src="images/edenred.png" alt="Company logo">
                     </div>
                     <div class="experience-content">
-                        <h3>Previous Role</h3>
-                        <div class="experience-meta">Company Name | [Dates] | Location</div>
+                        <h3>Senior Pricing Analyst</h3>
+                        <div class="experience-meta">Edenred | Jan/24 - Jul/25 | Porto Alegre, RS</div>
+                        <ul>
+                            <li>Developed SQL queries and ETL pipelines to support business intelligence needs</li>
+                            <li>Created data visualizations and reports for stakeholders across multiple departments</li>
+                            <li>Performed ad-hoc analysis to answer critical business questions</li>
+                            <li>Improved data accuracy and reduced reporting time by X%</li>
+                        </ul>
+                    </div>
+                </div>
+               <div class="experience-item">
+                    <div class="experience-logo">
+                        <img src="images/queroquero.png" alt="Company logo">
+                    </div>
+                    <div class="experience-content">
+                        <h3>Senior Pricing Analyst</h3>
+                        <div class="experience-meta">Lojas Quero-Quero | Jan/23 - Jan/24 | Location</div>
                         <ul>
                             <li>Developed SQL queries and ETL pipelines to support business intelligence needs</li>
                             <li>Created data visualizations and reports for stakeholders across multiple departments</li>
@@ -532,7 +516,7 @@
         </div>
 
         <footer>
-            <p>&copy; 2024 Your Name | Powered by Data & Analytics</p>
+            <p>&copy; 2024 Bruno de Morais | Powered by Data & Analytics</p>
         </footer>
     </div>
 </body>
